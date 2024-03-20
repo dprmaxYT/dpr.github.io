@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="icon" href="../img/icons/1.ico" type="image/x-icon">
+    <link rel="STYLESHEET" type="text/css" href="../css/style.css">
+    <style>
+        body {
+            /*background-color: #2e2e2e;*/
+            color: rgb(255, 255, 255);
+            background-image: url(https://drive.google.com/file/d/1mazQeZDxTo2wGLOCkzIPP8t5IJebDmAw/view?usp=sharing);
+            background-size: cover;
+            }
+        #menua {
+            width:1200px;
+            border:solid rgba(0, 0, 0, 0);
+            /*border-width:3px;
+            padding-left: 25px;*/
+            color: white;
+            background-color: black;
+            text-decoration: red;
+            /*align-content: center;*/
+            text-align: center;
+            font-size: 130%;
+            border-radius: 5pt;
+            
+            }           
+        #menua a:active {
+            background-color: #f0f0;
+            color: #ead9d9;
+            }
+        /*
+        #menua a:visited {
+            color: #ead9d9;
+            }
+        */
+        #tabla1 {
+            width: auto;
+            }
+        button {
+            color: white;
+            background-color: rgba(32, 32, 32, 0);
+            /*height: 30000%;
+            width: 50%;*/
+            border-color: rgba(255, 255, 255, 0);
+        }
+
+        /*estos son los estilos del tablon*/
+        .board {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .anuncio {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid rgba(204, 204, 204, 0);
+            background-color: rgba(0, 0, 0, 0.459);
+            border-radius: 10px;
+        }
+        .anunciotext {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid rgba(221, 221, 221, 0.247);
+            background-color: rgba(0, 0, 0, 0.363);
+            border-radius: 10px;
+        }
+        .icons {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .icons i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .msgtablon {
+            font-size: 200%;
+            text-align: center;
+        }
+        .titulo {
+            text-align: center;
+            padding-right: 30%;
+        }
+    </style>
+</head>
+<body>
+<!--
+    <b>
+    <div id="menua">
+        <button onclick="window.location.href = '../html/home.html'">Home</button>
+        <button onclick="window.location.href = '../html/galeria.html'">Galeria</button>
+        <button onclick="window.location.href = '../html/galeria.html'">Tienda</button>
+        <button onclick="window.location.href = '../html/galeria.html'">otras cosas</button>
+        <button onclick="window.location.href = '../html/galeria.html'">a</button>
+    </div>
+    </b>
+-->
+    <h1 class="titulo">bienvenido a mi pagina</h1>
+    <div class="board">
+        <div class="anuncio">
+            <i><h2 class="msgtablon">Tablon de anuncios</h2></i>
+            <div class="anunciotext">
+                <strong>Nuevo Collab!</strong>
+                <p>Me eunido a otro callab, creo que voy a hacer un cielo estrellado o algo asi, ya veré que hago</p>
+                <p>07/02/2024 17:15</p>
+            </div>
+            <div class="anunciotext">
+                <strong>A new down al 80%</strong>
+                <p>Ya solo falta la ultima parte y todo estara listo</p>
+                <p>Calculo que sera un nivel hard</p>
+                <p>05/02/2024 11:03</p>
+            </div>
+            <div class="anunciotext">
+                <strong>Nadie se a dado cuenta xD</strong>
+                <p>Puse hace unos dias un tweet, en el que decia "Quien puede responder?" Con el modo solo pueden responder las personas que sigues.</p>
+                <p>El caso es que sigo a todos mis seguidores, por lo que todos pueden responder XD.</p>
+                <p>Haber si alguien se da cuenta.</p>
+                <p>05/02/2024 11:03</p>
+            </div>
+        </div>
+        <!DOCTYPE html>
+        
+    <div class="icons">
+        <a>hola</a>
+        <span class="custom-icon" onclick="navigateTo('https://www.example.com')">
+            <img src="../img/icons/2.ico" alt="Home" height="30" width="30">
+        </span>
+        <span class="custom-icon" onclick="navigateTo('https://www.example.com/contact')">
+            <img src="../img/icons/3.ico" alt="Contact" height="30" width="30">
+        </span>
+        <span class="custom-icon" onclick="navigateTo('https://www.example.com/events')">
+            <img src="../img/icons/4.ico" alt="Events" height="30" width="30">
+        </span>
+    </div>
+
+    <div id="myModal" style="display: none;">
+        <!-- cosas para poner dentro -->
+    </div>
+
+    <script>
+        // esto es para ir a otra pagina
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+
+    </script>
+
+</body>
+</html>

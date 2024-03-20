@@ -1,0 +1,39 @@
+body {
+    /*background-color: #2e2e2e;*/
+    color: rgb(255, 255, 255);
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    }
+#menua {
+    width:1200px;
+    border:solid rgba(0, 0, 0, 0);
+    /*border-width:3px;
+    padding-left: 25px;*/
+    color: white;
+    background-color: black;
+    text-decoration: red;
+    /*align-content: center;*/
+    text-align: center;
+    font-size: 130%;
+    border-radius: 5pt;
+    
+    }           
+#menua a:active {
+    background-color: #f0f0;
+    color: #ead9d9;
+    }
+/*
+#menua a:visited {
+    color: #ead9d9;
+    }
+*/
+#tabla1 {
+    width: auto;
+    }
+button {
+    color: white;
+    background-color: rgba(32, 32, 32, 0);
+    /*height: 30000%;
+    width: 50%;*/
+    border-color: rgba(255, 255, 255, 0);
+}
