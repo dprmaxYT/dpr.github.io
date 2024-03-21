@@ -1,0 +1,28 @@
+/* Estilos para el árbol de directorios */
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.folder .name {
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+/* Estilos para los iconos de archivo */
+.file-icon {
+    font-style: normal;
+}
+
+/* Iconos para expandir y contraer */
+.expand-icon:before {
+    content: "▼";
+}
+
+.collapse-icon:before {
+    content: "▶";
+}

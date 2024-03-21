@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .folder {
+            margin-left: 20px;
+        }
+        .icon {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        var data = {
+            name: "root",
+            type: "folder",
+            children: [
+                {
+                    name: "folder1",
+                    type: "folder",
+                    children: [
+                        { name: "file1.txt", type: "file" },
+                        { name: "file2.txt", type: "file" }
+                    ]
+                },
+                { name: "file3.txt", type: "file" }
+            ]
+        };
+
+        function createTree(data, root) {
+            var node = document.createElement("div");
+            node.className = data.type;
+            var icon = document.createElement("span");
+            icon.className = "icon";
+            icon.textContent = data.name;
+            icon.onclick = function() {
+                if (data.type === "folder") {
+                    var children = node.querySelector(".children");
+                    if (children) {
+                        node.removeChild(children);
+                    } else {
+                        createChildren(data.children, node);
+                    }
+                } else if (data.type === "file") {
+                    myFunction(data.name);
+                }
+            };
+            node.appendChild(icon);
+            if (data.type === "folder") {
+                createChildren(data.children, node);
+            }
+            root.appendChild(node);
+        }
+
+        function createChildren(children, node) {
+            var childrenContainer = document.createElement("div");
+            childrenContainer.className = "children";
+            children.forEach(function(child) {
+                createTree(child, childrenContainer);
+            });
+            node.appendChild(childrenContainer);
+        }
+
+        function myFunction(filename) {
+            // Aquí puedes definir tu propia función
+            alert("Has hecho clic en " + filename);
+        }
+
+        createTree(data, document.getElementById("root"));
+    </script>
+</body>
+</html>

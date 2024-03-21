@@ -5,21 +5,17 @@ body {
     background-size: cover;
     }
 #menua {
-    width:90%px;
-    padding: 0.1%;
-    height: 30px;
-    border:solid rgb(0, 68, 255);
+    width:1200px;
+    border:solid rgba(0, 0, 0, 0);
     /*border-width:3px;
     padding-left: 25px;*/
     color: white;
-    background-color: rgba(0, 0, 0, 0.842);
-    text-decoration: rgba(146, 182, 79, 0.692);
+    background-color: black;
+    text-decoration: red;
     /*align-content: center;*/
     text-align: center;
     font-size: 130%;
     border-radius: 5pt;
-    border-style: outset;
-
     
     }           
 #menua a:active {
