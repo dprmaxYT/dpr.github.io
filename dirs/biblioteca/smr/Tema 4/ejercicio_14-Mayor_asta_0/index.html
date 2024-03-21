@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor hasta 0</title>
+    <script>
+        // Informacion inicial
+        alert("Escribe unos cuantos numeros, te dire cual es el mayor");
+        alert("Para terminar escribe un 0");
+        // Proceso
+        var mayor = -Infinity;
+        while (true) {
+            var entrada = prompt("Introduce un número (o escribe 0 para terminar):");
+            var numero = Number(entrada);
+            if (!isNaN(numero)) { //No encontre otra solucion que usar el isNaN este, no se para que sirve, solo que funciona
+// Comprobar lo del 0
+                if (numero === 0) {
+                    break;
+                } else {
+                    if (numero > mayor) {
+                        mayor = numero;
+                    }
+                }
+            } else {
+                alert("Por favor, introduce un número válido.");
+            }
+        }
+
+// Resultado
+        if (mayor !== -Infinity) {
+            alert("El número más grande introducido es: " + mayor);
+        } else {
+            alert("No se introdujeron números válidos.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

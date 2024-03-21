@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El mayor.net</title>
+    <script type="text/javascript">
+
+        //Bienvenida
+        alert("bienvenido a «El mayor.net»")
+        alert("vamos a calcular cual numero es mayor, para eso, danos los numeros a continuacion")
+        
+        //Numeros
+        var numa, numb;     
+        numa = parseInt(prompt("introduce el primer numero"))
+        numb = parseInt(prompt("y ahora el segundo"))
+
+        //Si-Sino
+        if (numa > numb) {
+            alert("el numero mayor es " + numa)     //Caso A mayor que B
+            alert("Adios! :D")
+        } else {
+            if (numa < numb) {
+                alert("el numero mayor es " + numb)     //Caso A menor que B
+                alert("Adios! :D")
+            } else {
+              if (numa = numb) {
+                  alert("los dos son iguales :v")   //Caso A igual que B
+              } else {
+                  alert("aqui hay algo raro :|")    //Caso de error (No hay numeros)
+                  alert("creo que no as puesto ningun numero")
+                  alert("bamos a reiniciar la pagina");
+                    window.location.reload();
+                    //esto es un extra, reinicia la pagina :) (lo conocia de antes)
+              }  
+            }
+        }
+    </script>
+    <link rel="STYLESHEET" type="text/css" href="css/style.css"> <!-- enlace con la hoja de estilos para la cara de fondo -->
+</head>
+<body>
+    <!-- cara de fondo -->
+    <h1>
+        :)
+    </h1>
+</body>
+</html>

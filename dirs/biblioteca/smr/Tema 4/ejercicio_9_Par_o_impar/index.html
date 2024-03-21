@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El bicho de los numeros pares</title>
+    <script>
+        var num, res;
+        alert("Hola!");
+        alert("Me gustan los numeros pares!")
+        alert("Me das uno?")
+        num = parseInt(prompt("Introduce un numero"));
+        res = num % 2;
+        if (res == 0) {
+            alert("Gracias por darme un " + num + " me gustan los numeros pares :D");
+        } else {
+            alert("Ese no hera un numero par :(");
+            alert("Que tal si volvemos a intentarlo?");
+            window.location.href = 'html/index2.html';
+        }
+    </script>
+</head>
+<body>
+    <button onclick="window.location.href='';">Resetear Pagina</button>
+</body>
+</html>
