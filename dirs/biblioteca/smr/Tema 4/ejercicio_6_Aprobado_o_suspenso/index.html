@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANOTA.com</title>
+    <script type="text/javascript">
+        var nombre, nota, asignatura, excusa, comentarios;
+        nombre = prompt("Introduce tu nombre");
+        nota = parseInt(prompt("Introduce la nota"));
+        asignatura = prompt("Introduce la asignatura");
+
+        if (nota < 5) {
+            alert("Lo siento " + nombre + " pero has suspendido " + asignatura);
+        } else {
+            if (nota > 8) {
+                if (nota > 10) {
+                    alert(nombre + ", no inventes, no se puede sacar más de un 10 en " + asignatura + ", y tú dices que has sacado un " + nota + ". Será mejor que tengas una buena excusa");
+                    excusa = prompt("Cuéntame tu excusa");
+                    alert("No me valen tus excusas " + nombre);
+                    comentarios = prompt("Algun comentario?")
+                    alert("El comentario: " + comentarios + ", fue enviado e ignorado con exito")
+                    alert("Para la proxima " + nombre + " pones tu nota bien")
+                } else {
+                    alert("Pero, " + nombre + ", has sacado un sobresaliente en " + asignatura + ". ¿Me das algo? :D");
+                }
+            } else {
+                alert("Enhorabuena " + nombre + ", has aprobado " + asignatura);
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Los Pares</title>
+  <script type="text/javascript">
+
+    function visualizarParesMenores() {
+
+// Pedir el numero
+
+      var numero = prompt("Dame el numero :D");
+
+// Comprobacion de si el numero es valido
+        
+        if (numero <= 0 || numero % 1 !== 0) {
+            alert("eso creo que no era");
+            if (numero <= 2) {
+                alert();
+            } else {
+                
+            }
+        }
+
+// Proceso
+
+      numero = parseInt(numero);
+      var i = 2;
+      while (i <= numero) {
+        document.write(i + " ");
+        i += 2;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Pares asta un numero</h1>
+  <button onclick="visualizarParesMenores()">Visualizar Pares</button>
+</body>
+</html>

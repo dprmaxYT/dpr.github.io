@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de Multiplicar</title>
+  <script type="text/javascript">
+
+//Pasos iniciales
+
+    function mostrarTablaMultiplicar() {                                                                        //Me encanta esta parte
+      var numero = prompt("Introduce un número para mostrar su tabla de multiplicar:");
+
+//Comprobar si el numero esta bien
+
+      if (numero === null || numero.trim() === "" || parseInt(numero) <= 0) { 
+        alert("ese numero no me gusta");
+        window.location.reload(); 
+      }
+
+// Convertir a un número entero
+
+      numero = parseInt(numero);
+      var i = 1;
+      document.write("La tabla de multiplicar del número " + numero + " es:<br>");
+      while (i <= 10) {
+
+// Calcular el resultado de la multiplicación
+
+        var resultado = numero * i;
+        document.write(numero + " x " + i + " = " + resultado + "<br>");
+        i++;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Tabla de Multiplicar</h1>
+  <button onclick="mostrarTablaMultiplicar()">Mostrar Tabla</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TresAngulos.co</title>
+    <script type="text/javascript">
+    alert("Sabes que puedo adivinar la clase de triangulo solo con los angulos?");
+    alert("Dame los angulos y te lo demuestro!");
+// Aqui es donde se ponen las variables. Me gusta como se ve de esta manera
+        var angulo1 = parseInt(prompt("Dame el primer angulo:"));
+        var angulo2 = parseInt(prompt("Dame el segundo angulo:"));
+        var angulo3 = parseInt(prompt("Dame el tercer angulo:"));
+
+// Aqui compruevo si la suma de los angulos da 180 grados, si lo da significa que es un triangulo
+        
+        if (angulo1 + angulo2 + angulo3 === 180) {
+
+// Aqui es donde compruevo que tipo de triangulo es
+            if (angulo1 === angulo2 && angulo2 === angulo3) {
+                alert("Los ángulos forman un triángulo equilátero.");
+            } else {
+                if (angulo1 === angulo2 || angulo2 === angulo3 || angulo1 === angulo3) {
+                alert("Los ángulos forman un triángulo isósceles.");
+                } else {
+                alert("Los ángulos forman un triángulo escaleno.");
+                }
+            }
+        } else {
+            alert("Eso no era un triangulo :/");
+            alert("Vamos a probar otra vez");
+            window.location.href = 'html/index2.html'
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
